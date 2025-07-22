@@ -1,4 +1,3 @@
- 
 // function smaller(arr) {
 //     //code me
 //     let z=[]
@@ -17,7 +16,7 @@ function smaller(nums) {
   console.log(nums)
 let newArray =[]
 for(index in nums){
-    newArray.push(BigInt(nums.slice(index).filter(a=>a< nums[index]).length))
+    newArray.push(nums.slice(index).filter(a=>a< nums[index]).length)
 }
 return newArray
 }
