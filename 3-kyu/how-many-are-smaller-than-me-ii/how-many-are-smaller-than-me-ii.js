@@ -1,3 +1,4 @@
+ 
 // function smaller(arr) {
 //     //code me
 //     let z=[]
@@ -13,6 +14,7 @@
 //  console.log(smaller([1, 1, -1, 0, 0]))
 ​
 function smaller(nums) {
+  console.log(nums)
 let newArray =[]
 for(index in nums){
     newArray.push(nums.slice(index).filter(a=>a< nums[index]).length)
