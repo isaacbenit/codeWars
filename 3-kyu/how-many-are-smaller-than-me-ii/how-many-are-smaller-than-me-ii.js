@@ -17,7 +17,7 @@ function smaller(nums) {
   console.log(nums)
 let newArray =[]
 for(index in nums){
-    newArray.push(nums.slice(index).filter(a=>a< nums[index]).length)
+    newArray.push(BigInt(nums.slice(index).filter(a=>a< nums[index]).length))
 }
 return newArray
 }
