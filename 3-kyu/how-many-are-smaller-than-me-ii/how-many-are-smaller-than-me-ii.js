@@ -13,11 +13,10 @@
 //  console.log(smaller([1, 1, -1, 0, 0]))
 ​
 function smaller(nums) {
-  console.log(nums)
-let newArray =[]
+let newArray = new Set()
 for(index in nums){
-    newArray.push(nums.slice(index).filter(a=>a< nums[index]).length)
+    newArray.add([nums.slice(index).filter(a=>a< nums[index]).length])
 }
-return newArray
+return [...newArray].flat()
 }
 console.log(smaller([1, 2, 3]))
