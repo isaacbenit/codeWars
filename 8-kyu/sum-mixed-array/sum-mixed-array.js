@@ -1,3 +1,3 @@
 function sumMix(x){
-return x.reduce((a,b)=> +a+b)
+return x.reduce((a,b)=> Number(a)+Number(b)
 }
