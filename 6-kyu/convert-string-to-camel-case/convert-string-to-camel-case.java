@@ -1,4 +1,3 @@
- 
 // import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +30,7 @@ class Solution{
              }else{
               eles[0] = eles[0].toUpperCase();  
              }
-            eles[0] = eles[0].toUpperCase();
+//             eles[0] = eles[0].toUpperCase();
             String neweles = String.join("",eles);
             newWord = newWord + neweles;
             // newSentence.add(eles);
