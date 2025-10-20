@@ -1,6 +1,7 @@
 import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Arrays;
 class Solution{
 ​
   static String toCamelCase(String s){
