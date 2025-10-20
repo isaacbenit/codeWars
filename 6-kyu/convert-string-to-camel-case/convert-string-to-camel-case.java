@@ -1,4 +1,3 @@
- 
 // import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +5,8 @@ import java.util.Arrays;
 class Solution{
 ​
   static String toCamelCase(String s){
-    String s=s.trim();
-    String[] sentenceTest = s.split("");
+    String se=s.trim();
+    String[] sentenceTest = se.split("");
         List<String> sentence1 = Arrays.asList(sentenceTest);
     String[] word ={} ;
         
