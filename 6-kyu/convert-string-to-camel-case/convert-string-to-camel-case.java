@@ -26,11 +26,11 @@ class Solution{
             String[] eles = ele.split("");
           
           List<String> eles1 = Arrays.asList(eles);
-//             if(eles1.contains(" ")){
-//             eles[1] = eles[1].toUpperCase();
-//              }else{
-//               eles[0] = eles[0].toUpperCase();  
-//              }
+            if(eles1.contains(" ")){
+            eles[1] = eles[1].toUpperCase();
+             }else{
+              eles[0] = eles[0].toUpperCase();  
+             }
             eles[0] = eles[0].toUpperCase();
             String neweles = String.join("",eles);
             newWord = newWord + neweles;
