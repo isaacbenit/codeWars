@@ -3,8 +3,7 @@ import java.util.ArrayList;
 class Solution{
 ​
   static String toCamelCase(String s){
-     String[] word1 = s.split("_");
-     String[] word = word1.split("-");
+     String[] word = s.split("_");
     
         ArrayList<String[]> newSentence = new ArrayList<>();
         String newWord = "";
