@@ -4,7 +4,6 @@ class Solution{
 ​
   static String toCamelCase(String s){
      String[] word = s.split("_");
-    
         ArrayList<String[]> newSentence = new ArrayList<>();
         String newWord = "";
         for (String ele: word){
