@@ -1,4 +1,3 @@
- 
 // import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +21,14 @@ class Solution{
 //      String[] word = s.split("-");
         ArrayList<String[]> newSentence = new ArrayList<>();
         String newWord = "";
-        for (String ele: word){
-            String[] eles = ele.split("");
-            eles[0] = eles[0].toUpperCase();
+        for (int a=0;a<word.length;a++){
+            String[] eles = word[a].split("");
+            System.out.println(Arrays.toString(eles));
+            if(a == 0){
+                eles[0] = eles[0];
+            }else{
+                eles[0] = eles[0].toUpperCase();
+            }
             String neweles = String.join("",eles);
             newWord = newWord + neweles;
             // newSentence.add(eles);
