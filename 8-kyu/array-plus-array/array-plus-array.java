@@ -1,5 +1,4 @@
 public class Sum {
-  
 ​
   public static int arrayPlusArray(int[] arr1, int[] arr2) {
     int sum1 = 0;
