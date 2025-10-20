@@ -1,3 +1,4 @@
+ 
 // import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +7,7 @@ class Solution{
 ​
   static String toCamelCase(String s){
 //      s=s.trim();
-    System.out.println(s);
+//     System.out.println(s);
     String[] sentenceTest = s.split("");
         List<String> sentence1 = Arrays.asList(sentenceTest);
     String[] word ={} ;
@@ -23,14 +24,7 @@ class Solution{
         String newWord = "";
         for (String ele: word){
             String[] eles = ele.split("");
-          
-          List<String> eles1 = Arrays.asList(eles);
-            if(eles1.contains(" ")){
-            eles[1] = eles[1].toUpperCase();
-             }else{
-              eles[0] = eles[0].toUpperCase();  
-             }
-//             eles[0] = eles[0].toUpperCase();
+            eles[0] = eles[0].toUpperCase();
             String neweles = String.join("",eles);
             newWord = newWord + neweles;
             // newSentence.add(eles);
