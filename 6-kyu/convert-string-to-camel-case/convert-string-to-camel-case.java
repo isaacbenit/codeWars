@@ -6,13 +6,15 @@ class Solution{
   static String toCamelCase(String s){
     String[] sentenceTest = s.split("");
 //         List<String> sentence1 = Arrays.asList(sentenceTest);
+    ArrayList <String> arr = new ArrayList<>();
+​
     String[] word ={} ;
         
-        if(sentence1.contains("-")){
+        if(arr.contains("-")){
             word = s.split("-");
             
         }
-        if(sentence1.contains("_")){
+        if(arr.contains("_")){
             word =  s.split("_");
         } 
         String newWord = "";
