@@ -1,9 +1,11 @@
- 
 import java.lang.StringBuilder;
 import java.util.ArrayList;
+import java.util.List;
 class Solution{
 ​
   static String toCamelCase(String s){
+    String[] sentenceTest = s.split("");
+        List<String> sentence1 = Arrays.asList(sentenceTest);
     String[] word ={} ;
         
         if(sentence1.contains("-")){
