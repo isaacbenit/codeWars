@@ -5,8 +5,9 @@ import java.util.Arrays;
 class Solution{
 ​
   static String toCamelCase(String s){
-    String se=s.trim();
-    String[] sentenceTest = se.split("");
+     s=s.trim();
+    System.out.println(s);
+    String[] sentenceTest = s.split("");
         List<String> sentence1 = Arrays.asList(sentenceTest);
     String[] word ={} ;
         
