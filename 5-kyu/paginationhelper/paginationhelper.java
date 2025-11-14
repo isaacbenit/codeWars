@@ -1,4 +1,3 @@
- 
         return collection.size();
     }
 ​
@@ -15,14 +14,14 @@
      * this method should return -1 for pageIndex values that are out of range
      */
     public int pageItemCount(int pageIndex) {
-      System.out.println(pageIndex);
-      System.out.println(collection.size());
+      System.out.println(collection);
+      System.out.println(itemsPerPage);
         int pageNum = (int) Math.ceil((double) collection.size() /itemsPerPage);
-        if(pageIndex<pageNum){
+        if(pageIndex<pageNum-1){
             return  itemsPerPage;
         }
-        else if(pageIndex == pageNum){
-            return  collection.size() - (pageNum-1 )* itemsPerPage;
+        else if(pageIndex == pageNum-1){
+            return  collection.size() - (pageNum-2)* itemsPerPage;
         }
       return 0;
     }
@@ -32,9 +31,9 @@
      * this method should return -1 for itemIndex values that are out of range
      */
     public int pageIndex(int itemIndex) {
-        if(collection.size() == 0){return -1;}
-        if(itemIndex< itemsPerPage){return 1;}
-        else {return (int) Math.ceil((double) itemIndex /itemsPerPage);}
+//         if(collection.size() == 0){return -1;}
+        if(itemIndex>= collection.size() || itemIndex<0){return -1;}
+        else {return (int) Math.floor((double) itemIndex /itemsPerPage);}
     }
   
 }
