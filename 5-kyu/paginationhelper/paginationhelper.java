@@ -1,3 +1,4 @@
+ 
         return collection.size();
     }
 ​
@@ -16,6 +17,7 @@
     public int pageItemCount(int pageIndex) {
       System.out.println(collection);
       System.out.println(itemsPerPage);
+      System.out.println(pageIndex);
         int pageNum = (int) Math.ceil((double) collection.size() /itemsPerPage);
         if(pageIndex<pageNum-1){
             return  itemsPerPage;
