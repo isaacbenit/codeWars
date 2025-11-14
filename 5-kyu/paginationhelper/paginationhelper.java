@@ -1,4 +1,3 @@
- 
         return collection.size();
     }
 ​
@@ -15,11 +14,12 @@
      * this method should return -1 for pageIndex values that are out of range
      */
     public int pageItemCount(int pageIndex) {
-      System.out.println(collection);
-      System.out.println(itemsPerPage);
+//       System.out.println(collection);
+//       System.out.println(itemsPerPage);
       System.out.println(pageIndex);
         int pageNum = (int) Math.ceil((double) collection.size() /itemsPerPage);
-        if(pageIndex<pageNum-1){
+      System.out.println(pageNum);
+        if(pageIndex<pageNum){
             return  itemsPerPage;
         }
         else if(pageIndex == pageNum-1){
